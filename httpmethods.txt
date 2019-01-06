@@ -1,0 +1,36 @@
+A way of telling the server what type of request we are making...
+-Get
+-Post
+-Put
+-Delete
+
+form a get request from our API, return a list in json format...then return that json back.
+
+need a database/ mongoDB.
+
+from a front-end/3rd party app
+make a request
+go to APIget data from database, back to API and then front end
+Post request create new data
+
+Get Request retrieves information then sends it
+
+update/edit existing data
+-Put request
+
+Delete Data
+-Delete request
+
+CRUD-Create, Read, Update, Delete
+
+API routes- commutication with API,
+Get request, retrieves a list from a route.
+for a POST request we use the same data
+Put request add a different request.  has more information because the information already exists
+
+Delete data, we would go to the same route as a PUT request because we are deleting existing information.
+
+When we send data to the same requests., we say what kind of requests we are making.
+Then in the query we are putting the method, example as POST.
+
+Then if we want a GET request we change the method, even though it has the same route.
