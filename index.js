@@ -1,19 +1,19 @@
 const express = require('express');
-
+const bodyParser = require("body-parser");
+// const bodyParser = require('body-parser');
 
 // set up express app
 const app = express();
 
+app.use(bodyParser.json());
 
-app.use("/api", require("./routes/api"));
 // initialize routes
-
+app.use('/api', require('./routes/api'));
 
 // listen for requests
 app.listen(process.env.PORT || process.env.IP, function(){
 	console.log('now listening for requests');
 });
 
-
-// // initialize routes
-// app.use('/api', require('./routes/api'));
+// // use body-parser middleware
+// app.use(bodyParser.json());
