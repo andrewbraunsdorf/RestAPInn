@@ -17,6 +17,7 @@ router.post("/ninjas", function(req, res, next){
 
 //update a ninja in the db
 router.put("/ninjas/:id", function(req, res, next){
+    Ninja.findByIdAndUpdate({_id: req.params.id}, req.body);
     res.send({type: "PUT"});
 });
 
