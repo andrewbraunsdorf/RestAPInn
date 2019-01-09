@@ -10,7 +10,7 @@ const app = express();
 mongoose.connect("mongodb://localhost/ninjago", { useNewUrlParser: true });
 mongoose.Promise = global.Promise;
 
-
+app.use(express.static("public"));
 
 // use body-parser middleware
 app.use(bodyParser.json());
