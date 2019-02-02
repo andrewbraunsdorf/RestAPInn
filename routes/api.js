@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const Ninja = require('../models/ninjas');
+const react = require('react');
 
 // GET request
 router.get("/ninjas", function(req, res, next) {
@@ -12,7 +13,7 @@ router.get("/ninjas", function(req, res, next) {
       },
       distanceField: "dist.calculated",
       includeLocs: "dist.location",
-      maxDistance: 100000,
+      maxDistance: 10000,
       spherical: true
     }
   }])
